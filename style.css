@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte-destaque: "Roboto Slab", serif ;
+    --fonte-texto: "Anton", sans-serif ;
+    --cor-primaria: #03045E;
+    --cor-segundaria: #0077B6;
+    --cor-terciaria: #00B4D8;
+    --cor-quartaria: #90E0EF;
+    --cor-quintaria: #CAF0F8;
+    --cor-sentaria: #000000;
+
+    }
+    body{
+        background-color: var(--cor-quintaria);
+        font-family: var(--fonte-texto);
+    }
+    footer{
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--cor-primaria);
+        padding: 1em;
+    }
+    footer p{
+        font-size: 0.9rem;
+        color: var(--cor-quintaria);
+    }
+    footer a{
+        text-decoration: none;
+        color: var(--cor-segundaria);
+    }
