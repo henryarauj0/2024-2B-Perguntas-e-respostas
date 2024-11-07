@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 *{
     margin: 0;
@@ -36,3 +37,68 @@
         text-decoration: none;
         color: var(--cor-segundaria);
     }
+    #caixa{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 4rem;
+        gap: 2rem;
+    }
+    
+    .cartao{
+        margin: 1rem;
+        background-color: var(--vermelho);
+        height: 20rem;
+        flex-grow: 1;
+        flex-basis: calc(33% - 6rem)
+    }
+    
+    .cartao__conteudo{
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        transform-style: preserve-3d;
+        transition: transform 300ms ease-in-out;
+    }
+    
+    .cartao:hover .cartao__conteudo{
+        transform: rotateY(180deg);
+    }
+    
+    .cartao__conteudo h3{
+        border: 2px solid var(--azul-forte);
+        color: var(--azul);
+        font-family: var(--fonte-titulo);
+        text-align: center;
+        padding: 0.5rem;
+        position: absolute;
+        margin: 0.6rem;
+        border-radius:0.6rem;
+        font-size: 1.5vw;
+        backface-visibility: hidden;
+    }
+    
+    .cartao__conteudo__pergunta{
+        font-size: 1.5rem;
+        margin: 2.5rem;
+    }
+    
+    .cartao__conteudo p{
+        margin: 1rem;
+        padding: 1.3rem;
+    }
+    
+    .cartao__conteudo__pergunta,
+    .cartao__conteudo__resposta{
+        backface-visibility: hidden;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .cartao__conteudo__resposta{
+        font-size: 1.5rem;
+        transform: rotateY(180deg);
+    }
+    
