@@ -92,6 +92,7 @@
     
     .cartao__conteudo__pergunta,
     .cartao__conteudo__resposta{
+        background-color: var(--cor-segundaria);
         backface-visibility: hidden;
         position: absolute;
         height: 100%;
